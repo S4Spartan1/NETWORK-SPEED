@@ -1,0 +1,813 @@
+﻿Log file open, 07/17/17 08:53:29
+LogInit:Display: Running engine for game: Programming
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-387382445) SRandInit(-387382445).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.086776
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3450819
+LogInit: Engine Version: 4.15.3-3450819+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May 21 2017 11:02:34
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.07.17-12.53.30:551][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.17-12.53.30:551][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.07.17-12.53.30:574][  0]LogInit: Computer: EGDWS_MA_27
+[2017.07.17-12.53.30:574][  0]LogInit: User: Camper
+[2017.07.17-12.53.30:574][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.07.17-12.53.30:574][  0]LogInit: High frequency timer resolution =2.338344 MHz
+[2017.07.17-12.53.30:574][  0]LogMemory: Memory total: Physical=15.6GB (16GB approx)
+[2017.07.17-12.53.30:574][  0]LogMemory: Platform Memory Stats for Windows
+[2017.07.17-12.53.30:574][  0]LogMemory: Process Physical Memory: 263.32 MB used, 263.32 MB peak
+[2017.07.17-12.53.30:574][  0]LogMemory: Process Virtual Memory: 262.67 MB used, 262.67 MB peak
+[2017.07.17-12.53.30:574][  0]LogMemory: Physical Memory: 6054.25 MB used,  9954.97 MB free, 16009.22 MB total
+[2017.07.17-12.53.30:574][  0]LogMemory: Virtual Memory: 630.80 MB used,  9954.97 MB free, 134217728.00 MB total
+[2017.07.17-12.53.30:676][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.07.17-12.53.31:412][  0]LogD3D11RHI: D3D11 adapters:
+[2017.07.17-12.53.31:440][  0]LogD3D11RHI:    0. 'NVIDIA Quadro K1100M   ' (Feature Level 11_0)
+[2017.07.17-12.53.31:440][  0]LogD3D11RHI:       1992/0/8004 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.07.17-12.53.31:446][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2017.07.17-12.53.31:446][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.07.17-12.53.31:448][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.07.17-12.53.31:448][  0]LogD3D11RHI:       0/0/8004 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.07.17-12.53.31:448][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.07.17-12.53.31:451][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.07.17-12.53.31:451][  0]LogD3D11RHI:     GPU DeviceId: 0xff6 (for the marketing name, search the web for "GPU Device Id")
+[2017.07.17-12.53.31:451][  0]LogWindows: EnumDisplayDevices:
+[2017.07.17-12.53.31:451][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2017.07.17-12.53.31:452][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.07.17-12.53.31:452][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.07.17-12.53.31:452][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.07.17-12.53.31:452][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro K1100M   
+[2017.07.17-12.53.31:452][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.07.17-12.53.31:452][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.07.17-12.53.31:452][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.07.17-12.53.31:467][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
+[2017.07.17-12.53.31:471][  0]LogD3D11RHI: NvAPI_D3D_GetCurrentSLIState failed: 0xfffffff7
+[2017.07.17-12.53.31:471][  0]LogD3D11RHI: Async texture creation enabled
+[2017.07.17-12.53.31:489][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.07.17-12.53.31:490][  0]LogShaderCompilers: Guid format shader working directory is -21 characters bigger than the processId version (../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Intermediate/Shaders/WorkingDirectory/1184/).
+[2017.07.17-12.53.31:490][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Camper/AppData/Local/Temp/UnrealShaderWorkingDir/431052A84B1E005E8EE9A2A9078365EE/'.
+[2017.07.17-12.53.31:490][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.07.17-12.53.32:862][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.07.17-12.53.32:956][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.07.17-12.53.33:056][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.07.17-12.53.33:154][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.07.17-12.53.33:239][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.07.17-12.53.33:315][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.07.17-12.53.33:392][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.07.17-12.53.33:467][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.07.17-12.53.33:532][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.07.17-12.53.33:606][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.07.17-12.53.33:679][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.07.17-12.53.33:751][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.07.17-12.53.33:826][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.07.17-12.53.33:900][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.07.17-12.53.33:972][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.07.17-12.53.34:117][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.07.17-12.53.34:117][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.07.17-12.53.34:173][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.07.17-12.53.34:295][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.07.17-12.53.34:338][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.07.17-12.53.34:410][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.07.17-12.53.34:482][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.07.17-12.53.34:556][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.07.17-12.53.34:628][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.07.17-12.53.34:628][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.07.17-12.53.35:219][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.07.17-12.53.35:261][  0]LogDerivedDataCache: Loaded boot cache 0.04s 50MB C:/Users/Camper/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.07.17-12.53.35:261][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Camper/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.07.17-12.53.35:262][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Camper/Documents/Unreal Projects/Programming/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.07.17-12.53.35:262][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.07.17-12.53.35:262][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Camper/Documents/Unreal Projects/Programming/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.07.17-12.53.35:262][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.07.17-12.53.35:281][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.07.17-12.53.35:293][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Camper/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.07.17-12.53.35:303][  0]LogSlate: Using Freetype 2.6.0
+[2017.07.17-12.53.35:304][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.17-12.53.35:304][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.17-12.53.35:633][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.17-12.53.35:636][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.07.17-12.53.35:911][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.07.17-12.53.35:973][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.07.17-12.53.36:045][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.07.17-12.53.36:045][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.07.17-12.53.36:045][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.07.17-12.53.36:624][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: programming, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 1529672182
+[2017.07.17-12.53.36:677][  0]LogAssetRegistry: FAssetRegistry took 0.0224 seconds to start up
+[2017.07.17-12.53.36:769][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.062543 seconds
+[2017.07.17-12.53.36:775][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.07.17-12.53.36:775][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.07.17-12.53.36:775][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.07.17-12.53.36:857][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.07.17-12.53.39:098][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.07.17-12.53.39:151][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.07.17-12.53.39:781][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.07.17-12.53.40:313][  0]SourceControl: Info Source control is disabled
+[2017.07.17-12.53.40:314][  0]SourceControl: Info Source control is disabled
+[2017.07.17-12.53.40:386][  0]SourceControl: Info Source control is disabled
+[2017.07.17-12.53.40:457][  0]SourceControl: Info Source control is disabled
+[2017.07.17-12.53.40:903][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/AdvancedVehicleOverview'
+[2017.07.17-12.53.40:903][  0]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/AdvancedVehicleOverview'
+[2017.07.17-12.53.40:903][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/VehicleAdvBP/AdvancedVehicleOverview.AdvancedVehicleOverview_C'
+[2017.07.17-12.53.42:306][  0]LogEngine: Initializing Engine...
+[2017.07.17-12.53.42:307][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.07.17-12.53.42:417][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.07.17-12.53.42:417][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.07.17-12.53.42:597][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.07.17-12.53.42:603][  0]LogInit: XAudio2 using 'Speaker/HP (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.17-12.53.42:630][  0]LogInit: FAudioDevice initialized.
+[2017.07.17-12.53.42:657][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/Camper/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.07.17-12.53.42:661][  0]LogInit: Texture streaming: Enabled
+[2017.07.17-12.53.42:785][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.07.17-12.53.42:943][  0]LogInit: Transaction tracking system initialized
+[2017.07.17-12.53.43:453][  0]BlueprintLog: New page: Editor Load
+[2017.07.17-12.53.44:713][  0]LocalizationService: Info Localization service is disabled
+[2017.07.17-12.53.45:683][  0]LogConsoleResponse:Display: 
+[2017.07.17-12.53.45:878][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.07.17-12.53.45:878][  0]LogCook:Display: Mobile HDR setting 1
+[2017.07.17-12.53.46:561][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Camper/Documents/Unreal Projects/Programming/Content/' took 0.02s
+[2017.07.17-12.53.47:406][  0]SourceControl: Info Source control is disabled
+[2017.07.17-12.53.47:406][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.07.17-12.53.47:406][  0]LightingResults: New page: Lighting Build
+[2017.07.17-12.53.47:467][  0]MapCheck: New page: Map Check
+[2017.07.17-12.53.47:467][  0]LightingResults: New page: Lighting Build
+[2017.07.17-12.53.49:878][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.07.17-12.53.50:264][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.07.17-12.53.50:295][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.07.17-12.53.50:404][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 108.449ms to complete.
+[2017.07.17-12.53.50:404][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 2.998
+[2017.07.17-12.53.50:483][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.07.17-12.53.51:034][  0]LogCollectionManager: Loaded 0 collections in 0.002651 seconds
+[2017.07.17-12.53.51:154][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Camper/Documents/Unreal Projects/Programming/Saved/Collections/' took 0.01s
+[2017.07.17-12.53.51:154][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Camper/Documents/Unreal Projects/Programming/Content/Developers/Camper/Collections/' took 0.01s
+[2017.07.17-12.53.51:154][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Camper/Documents/Unreal Projects/Programming/Content/Collections/' took 0.01s
+[2017.07.17-12.53.51:154][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.07.17-12.53.51:164][  0]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2245 classes and 453 folders.
+[2017.07.17-12.53.51:265][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.07.17-12.53.51:776][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.07.17-12.53.51:867][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.07.17-12.53.52:227][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.07.17-12.53.52:306][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.07.17-12.53.52:393][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.07.17-12.53.52:393][  0]LogLoad: (Engine Initialization) Total time: 24.47 seconds
+[2017.07.17-12.53.52:393][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.35 seconds
+[2017.07.17-12.53.52:393][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.07.17-12.53.52:411][  0]LogOcInput: OculusInput pre-init called
+[2017.07.17-12.53.52:479][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.07.17-12.53.52:481][  0]LogSlate: Took 0.000337 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.07.17-12.53.52:484][  0]LogSlate: Took 0.000311 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.07.17-12.53.52:521][  0]LogSlate: Took 0.012994 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.07.17-12.53.53:240][  0]LogRenderer: Reallocating scene render targets to support 904x324 NumSamples 1 (Frame:2).
+[2017.07.17-12.53.53:240][  0]LogSlate: Took 0.000443 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.17-12.53.54:424][  3]LogAssetRegistry: Asset discovery search completed in 17.7690 seconds
+[2017.07.17-12.53.54:424][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000008 seconds (found 0 objects)
+[2017.07.17-12.53.54:424][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000021 seconds (updated 0 objects)
+[2017.07.17-12.53.54:438][  3]LogSlate: Took 0.000317 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.17-12.55.52:102][408]LogRenderer: Reallocating scene render targets to support 904x436 NumSamples 1 (Frame:5368).
+[2017.07.17-12.56.01:021][662]LogTemp: Repeting last play command: Selected Viewport
+[2017.07.17-12.56.01:049][662]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.07.17-12.56.01:074][662]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.17-12.56.01:091][662]PIE: New page: PIE session: ThirdPersonExampleMap (Jul 17, 2017, 4:56:01 AM)
+[2017.07.17-12.56.01:109][662]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap
+[2017.07.17-12.56.01:193][662]LogPlayLevel: PIE: StaticDuplicateObject took: (0.084094s)
+[2017.07.17-12.56.01:194][662]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.07.17-12.56.01:194][662]LogPlayLevel: PIE: World Init took: (0.001042s)
+[2017.07.17-12.56.01:201][662]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap.ThirdPersonExampleMap (0.097439s)
+[2017.07.17-12.56.01:245][662]LogInit: XAudio2 using 'Speaker/HP (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.17-12.56.01:259][662]LogInit: FAudioDevice initialized.
+[2017.07.17-12.56.01:451][662]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.07.17-12.56.01:537][662]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.07.17-08.56.01
+[2017.07.17-12.56.01:574][662]LogWorld: Bringing up level for play took: 0.039679
+[2017.07.17-12.56.01:765][662]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2017.07.17-12.56.01:794][662]LogInit: WinSock: Socket queue 131072 / 131072
+[2017.07.17-12.56.01:796][662]LogInit: WinSock: I am EGDWS_MA_27 (136.167.116.188:0)
+[2017.07.17-12.56.01:796][662]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.17-12.56.01:802][662]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
+[2017.07.17-12.56.01:824][662]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap 0.723
+[2017.07.17-12.56.01:826][662]PIE: New page: PIE session: ThirdPersonExampleMap (Jul 17, 2017, 4:56:01 AM)
+[2017.07.17-12.56.01:927][662]LogNet: Browse: 127.0.0.1//Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.07.17-12.56.01:927][662]LogInit: WinSock: Socket queue 32768 / 32768
+[2017.07.17-12.56.01:928][662]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.17-12.56.01:928][662]LogNet: Game client on port 7777, rate 10000
+[2017.07.17-12.56.01:936][662]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: programming, ProjectVersion: 1.0.0.0, EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2209074672
+[2017.07.17-12.56.01:936][662]LogNet: UPendingNetGame::InitNetDriver: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_0, Driver: PendingNetDriver IpNetDriver_1, IsServer: NO, PC: NULL, Owner: NULL
+[2017.07.17-12.56.01:940][662]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap 0.839
+[2017.07.17-12.56.01:946][662]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.07.17-12.56.01:971][662]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:50851
+[2017.07.17-12.56.01:972][662]LogHandshake: SendConnectChallenge. Timestamp: 0.016667, Cookie: 007070167026196083094229108149141123021047075128209094063193
+[2017.07.17-12.56.02:052][662]LogHandshake: SendChallengeResponse. Timestamp: 0.016667, Cookie: 007070167026196083094229108149141123021047075128209094063193
+[2017.07.17-12.56.02:265][663]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:50851
+[2017.07.17-12.56.02:265][663]LogNet: Server accepting post-challenge connection from: 127.0.0.1:50851
+[2017.07.17-12.56.02:265][663]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.17-12.56.02:265][663]LogNet: NotifyAcceptedConnection: Name: ThirdPersonExampleMap, TimeStamp: 07/17/17 08:56:02, [UNetConnection] RemoteAddr: 127.0.0.1:50851, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.17-12.56.02:265][663]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:50851, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.17-12.56.02:265][663]LogNet: NotifyAcceptingChannel Control 0 server World /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap.ThirdPersonExampleMap: Accepted
+[2017.07.17-12.56.02:277][663]LogNet: Remote platform little endian=1
+[2017.07.17-12.56.02:277][663]LogNet: This platform little endian=1
+[2017.07.17-12.56.02:335][664]LogNet: Login request: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap userId: Invalid
+[2017.07.17-12.56.02:347][664]LogNet: Welcomed by server (Level: /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap, Game: /Game/ThirdPersonBP/Blueprints/ThirdPersonGameMode.ThirdPersonGameMode_C)
+[2017.07.17-12.56.02:356][664]LogLoad: LoadMap: 127.0.0.1//Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap?game=/Game/ThirdPersonBP/Blueprints/ThirdPersonGameMode.ThirdPersonGameMode_C
+[2017.07.17-12.56.02:398][664]Cmd: MEM
+[2017.07.17-12.56.02:439][664]LogMemory: Platform Memory Stats for Windows
+[2017.07.17-12.56.02:439][664]LogMemory: Process Physical Memory: 1085.58 MB used, 1086.91 MB peak
+[2017.07.17-12.56.02:439][664]LogMemory: Process Virtual Memory: 1609.89 MB used, 1610.88 MB peak
+[2017.07.17-12.56.02:439][664]LogMemory: Physical Memory: 6144.43 MB used,  9864.80 MB free, 16009.22 MB total
+[2017.07.17-12.56.02:439][664]LogMemory: Virtual Memory: 2427.07 MB used,  9864.80 MB free, 134217728.00 MB total
+[2017.07.17-12.56.02:439][664]LogMemory: 
+[2017.07.17-12.56.02:439][664]Allocator Stats for TBB: (not implemented)
+[2017.07.17-12.56.02:459][664]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.07.17-12.56.02:463][664]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_2_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.07.17-08.56.02
+[2017.07.17-12.56.02:474][664]LogWorld: Bringing up level for play took: 0.013446
+[2017.07.17-12.56.02:474][664]LogLoad: Took 0.118486 seconds to LoadMap(/Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap)
+[2017.07.17-12.56.02:523][665]LogNet: Client netspeed is 10000
+[2017.07.17-12.56.02:523][665]LogNet: Join request: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap?SplitscreenCount=1
+[2017.07.17-12.56.02:626][665]LogNet: Join succeeded: 257
+[2017.07.17-12.56.13:489][969]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.07.17-12.56.13:670][969]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.07.17-12.56.13:694][969]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:50851, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: None, Owner: None
+[2017.07.17-12.56.13:694][969]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:50851, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: None, Owner: None, Channels: 2, Time: 2017.07.17-12.56.13
+[2017.07.17-12.56.13:694][969]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:50851, Name: IpConnection_1, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: None, Owner: None
+[2017.07.17-12.56.13:694][969]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_1, IsServer: NO, PC: None, Owner: None
+[2017.07.17-12.56.13:694][969]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_1, IsServer: NO, PC: None, Owner: None, Channels: 2, Time: 2017.07.17-12.56.13
+[2017.07.17-12.56.13:695][969]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_1, IsServer: NO, PC: None, Owner: None
+[2017.07.17-12.56.13:714][969]LogExit: GameNetDriver None shut down
+[2017.07.17-12.56.13:714][969]LogExit: GameNetDriver None shut down
+[2017.07.17-12.56.20:366][282]MapCheck: New page: Map Check
+[2017.07.17-12.56.20:548][282]LightingResults: New page: Lighting Build - Jul 17, 2017, 4:56:20 AM
+[2017.07.17-12.56.20:985][282]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.07.17-12.56.21:290][282]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.07.17-12.56.22:936][282]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.07.17-12.56.23:948][282]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.07.17-12.56.23:948][282]LogSwarmInterface: [TryOpenConnection] Local Process ID is 1184
+[2017.07.17-12.56.39:477][282]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.07.17-12.56.39:477][282]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.07.17-12.56.39:477][282]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.07.17-12.56.39:477][282]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.07.17-12.56.39:477][282]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.07.17-12.56.40:529][282]LogEditorBuildUtils: Build time 0:20
+[2017.07.17-12.56.52:041][766]Job is a success!
+[2017.07.17-12.56.52:133][767]LogSlate: Took 0.000232 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.17-12.56.53:152][767]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1, 1024X1024) - 152 MB total VRAM
+[2017.07.17-12.56.53:152][767]LogTexture:Display: Building textures: SkyOcclusion1_1 (AutoDXT, 1024X512) - 152 MB total VRAM
+[2017.07.17-12.56.53:152][767]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1, 1024X1024) - 152 MB total VRAM
+[2017.07.17-12.56.53:152][767]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 1024X1024) - 152 MB total VRAM
+[2017.07.17-12.56.53:152][767]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 1024X1024) - 152 MB total VRAM
+[2017.07.17-12.56.53:152][767]LogTexture:Display: Building textures: SkyOcclusion1_2 (AutoDXT, 1024X512) - 152 MB total VRAM
+[2017.07.17-12.56.53:152][767]LogTexture:Display: Building textures: SkyOcclusion1_3 (AutoDXT, 64X32) - 152 MB total VRAM
+[2017.07.17-12.56.53:152][767]LogTexture:Display: Building textures: HQ_Lightmap1_3 (AutoDXT, 64X64) - 152 MB total VRAM
+[2017.07.17-12.56.53:152][767]LogTexture:Display: Building textures: LQ_Lightmap_1_3 (DXT1, 64X64) - 152 MB total VRAM
+[2017.07.17-12.56.53:352][767]LogTexture:Display: Building textures: ShadowMapTexture2D_3 (G8, 32X32) - 152 MB total VRAM
+[2017.07.17-12.56.53:415][767]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (G8, 1024X1024) - 152 MB total VRAM
+[2017.07.17-12.57.03:549][767]Lightmass on EGDWS_MA_27: 10.9 sec total, 277 ms importing, 34 ms setup, 1.81 sec photons, 8.61 sec processing, 0 ms extra exporting [16/16 mappings]. Threads: 1:00 min total, 29.6 sec processing.
+[2017.07.17-12.57.03:588][767]LogStaticLightingSystem: Illumination: 42.9 sec (832 ms encoding lightmaps, 256 ms encoding shadowmaps)
+[2017.07.17-12.57.03:588][767]LogStaticLightingSystem: Lightmap texture memory:  5.3 MB (5.3 MB streaming, 0.0 MB non-streaming), 6 textures
+[2017.07.17-12.57.03:588][767]LogStaticLightingSystem: Shadowmap texture memory: 1.3 MB (1.3 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.07.17-12.57.04:440][767]DumpUnbuiltLightIteractions
+[2017.07.17-12.57.04:440][767]Lights with unbuilt interactions: 0
+[2017.07.17-12.57.04:440][767]
+[2017.07.17-12.57.04:440][767]Primitives with unbuilt interactions: 0
+[2017.07.17-12.57.04:466][768]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.07.17-12.57.04:466][768]MapCheck: New page: ThirdPersonExampleMap - Jul 17, 2017, 4:57:04 AM
+[2017.07.17-12.57.04:644][768]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 177.727ms to complete.
+[2017.07.17-12.58.05:976][685]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2017.07.17-12.58.07:246][689]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2017.07.17-12.58.15:116][890]LogSlate: Took 0.010196 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.07.17-12.58.22:570][110]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0010 seconds. Added 112 classes and 0 folders.
+[2017.07.17-12.58.23:902][110]LogSlate: Took 0.007962 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.07.17-12.58.31:378][528]LogRenderer: Reallocating scene render targets to support 904x696 NumSamples 1 (Frame:10865).
+[2017.07.17-13.00.02:563][989]BlueprintLog: New page: Compile ThirdPersonCharacter
+[2017.07.17-13.00.03:658][989]LogSavePackage: Save=136.37ms
+[2017.07.17-13.00.03:658][989]LogSavePackage: Moving '../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Saved/ThirdPersonCharacterAC8A25D742DA8993B7A2A8A181695BA7.tmp' to '../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset'
+[2017.07.17-13.00.03:662][989]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset
+[2017.07.17-13.00.21:865][411]LogMaterial: Missing cached shader map for material M_Tech_Panel, compiling. 
+[2017.07.17-13.00.21:895][411]LogTemp:Display: Added material ShaderMap 0x000002AEAA2BAB00 with Material 0x000002AF236F7380 to ShaderMapsBeingCompiled
+[2017.07.17-13.00.21:959][411]LogTemp:Display: Kicking off shader compilation for M_Tech_Panel, GameThreadShaderMap 0x000002AEAA2BAB00
+[2017.07.17-13.00.22:315][411]LogMaterial: Missing cached shader map for material M_Tech_Panel, compiling. 
+[2017.07.17-13.00.22:317][411]LogTemp:Display: Added material ShaderMap 0x000002AEA31E9980 with Material 0x000002AF236F7380 to ShaderMapsBeingCompiled
+[2017.07.17-13.00.22:349][411]LogTemp:Display: Kicking off shader compilation for M_Tech_Panel, GameThreadShaderMap 0x000002AEA31E9980
+[2017.07.17-13.00.22:349][411]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.07.17-13.00.22:392][411]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_21, compiling. 
+[2017.07.17-13.00.22:393][411]LogTemp:Display: Added material ShaderMap 0x000002AEFA1BC800 with Material 0x000002AEA82ACD00 to ShaderMapsBeingCompiled
+[2017.07.17-13.00.22:396][411]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_21, GameThreadShaderMap 0x000002AEFA1BC800
+[2017.07.17-13.00.22:397][411]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_22, compiling. 
+[2017.07.17-13.00.22:398][411]LogTemp:Display: Added material ShaderMap 0x000002AEE833A400 with Material 0x000002AEA82AF400 to ShaderMapsBeingCompiled
+[2017.07.17-13.00.22:400][411]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_22, GameThreadShaderMap 0x000002AEE833A400
+[2017.07.17-13.00.22:402][411]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_26, compiling. 
+[2017.07.17-13.00.22:402][411]LogTemp:Display: Added material ShaderMap 0x000002AEE8338B80 with Material 0x000002AEA82ADC00 to ShaderMapsBeingCompiled
+[2017.07.17-13.00.22:406][411]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_26, GameThreadShaderMap 0x000002AEE8338B80
+[2017.07.17-13.00.22:407][411]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_45, compiling. 
+[2017.07.17-13.00.22:408][411]LogTemp:Display: Added material ShaderMap 0x000002AEA3186B00 with Material 0x000002AEA82AFA00 to ShaderMapsBeingCompiled
+[2017.07.17-13.00.22:412][411]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_45, GameThreadShaderMap 0x000002AEA3186B00
+[2017.07.17-13.00.22:414][411]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_46, compiling. 
+[2017.07.17-13.00.22:415][411]LogTemp:Display: Added material ShaderMap 0x000002AEA3185280 with Material 0x000002AEA82AE200 to ShaderMapsBeingCompiled
+[2017.07.17-13.00.22:419][411]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_46, GameThreadShaderMap 0x000002AEA3185280
+[2017.07.17-13.00.22:421][411]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_47, compiling. 
+[2017.07.17-13.00.22:422][411]LogTemp:Display: Added material ShaderMap 0x000002AEA343B580 with Material 0x000002AF23759C00 to ShaderMapsBeingCompiled
+[2017.07.17-13.00.22:426][411]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_47, GameThreadShaderMap 0x000002AEA343B580
+[2017.07.17-13.00.22:428][411]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.07.17-13.00.22:429][411]LogTemp:Display: Added material ShaderMap 0x000002AEA3439D00 with Material 0x000002AF23758700 to ShaderMapsBeingCompiled
+[2017.07.17-13.00.22:432][411]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x000002AEA3439D00
+[2017.07.17-13.00.22:811][412]LogTemp:Display: Finished compile of shader map 0x000002AEAA2BAB00
+[2017.07.17-13.00.22:811][412]LogTemp:Display: Shader map M_Tech_Panel complete, GameThreadShaderMap 0x000002AEAA2BAB00, marking material M_Tech_Panel as finished
+[2017.07.17-13.00.22:811][412]LogTemp:Display: Marking material as finished 0x000002AF236F7380
+[2017.07.17-13.00.25:590][572]LogTemp:Display: Finished compile of shader map 0x000002AEA31E9980
+[2017.07.17-13.00.25:590][572]LogTemp:Display: Shader map M_Tech_Panel complete, GameThreadShaderMap 0x000002AEA31E9980, marking material M_Tech_Panel as finished
+[2017.07.17-13.00.25:590][572]LogTemp:Display: Marking material as finished 0x000002AF236F7380
+[2017.07.17-13.00.25:600][572]LogTemp:Display: Finished compile of shader map 0x000002AEFA1BC800
+[2017.07.17-13.00.25:600][572]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_21 complete, GameThreadShaderMap 0x000002AEFA1BC800, marking material FMatExpressionPreview MaterialExpressionTextureSample_21 as finished
+[2017.07.17-13.00.25:600][572]LogTemp:Display: Marking material as finished 0x000002AEA82ACD00
+[2017.07.17-13.00.25:625][573]MaterialEditorStats: Info Base pass shader with static lighting: 139 instructions
+[2017.07.17-13.00.25:625][573]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 111 instructions
+[2017.07.17-13.00.25:625][573]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.17-13.00.25:625][573]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.07.17-13.00.25:742][580]LogTemp:Display: Finished compile of shader map 0x000002AEE833A400
+[2017.07.17-13.00.25:742][580]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_22 complete, GameThreadShaderMap 0x000002AEE833A400, marking material FMatExpressionPreview MaterialExpressionTextureSample_22 as finished
+[2017.07.17-13.00.25:742][580]LogTemp:Display: Marking material as finished 0x000002AEA82AF400
+[2017.07.17-13.00.25:808][584]LogTemp:Display: Finished compile of shader map 0x000002AEE8338B80
+[2017.07.17-13.00.25:808][584]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_26 complete, GameThreadShaderMap 0x000002AEE8338B80, marking material FMatExpressionPreview MaterialExpressionTextureSample_26 as finished
+[2017.07.17-13.00.25:808][584]LogTemp:Display: Marking material as finished 0x000002AEA82ADC00
+[2017.07.17-13.00.25:991][595]LogTemp:Display: Finished compile of shader map 0x000002AEA3186B00
+[2017.07.17-13.00.25:991][595]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_45 complete, GameThreadShaderMap 0x000002AEA3186B00, marking material FMatExpressionPreview MaterialExpressionTextureSample_45 as finished
+[2017.07.17-13.00.25:991][595]LogTemp:Display: Marking material as finished 0x000002AEA82AFA00
+[2017.07.17-13.00.26:025][597]LogTemp:Display: Finished compile of shader map 0x000002AEA3185280
+[2017.07.17-13.00.26:025][597]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_46 complete, GameThreadShaderMap 0x000002AEA3185280, marking material FMatExpressionPreview MaterialExpressionTextureSample_46 as finished
+[2017.07.17-13.00.26:025][597]LogTemp:Display: Marking material as finished 0x000002AEA82AE200
+[2017.07.17-13.00.26:209][608]LogTemp:Display: Finished compile of shader map 0x000002AEA343B580
+[2017.07.17-13.00.26:209][608]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_47 complete, GameThreadShaderMap 0x000002AEA343B580, marking material FMatExpressionPreview MaterialExpressionTextureSample_47 as finished
+[2017.07.17-13.00.26:209][608]LogTemp:Display: Marking material as finished 0x000002AF23759C00
+[2017.07.17-13.00.26:258][611]LogTemp:Display: Finished compile of shader map 0x000002AEA3439D00
+[2017.07.17-13.00.26:258][611]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x000002AEA3439D00, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.07.17-13.00.26:258][611]LogTemp:Display: Marking material as finished 0x000002AF23758700
+[2017.07.17-13.01.07:539][914]LogMaterial: Missing cached shader map for material M_Tech_Panel, compiling. 
+[2017.07.17-13.01.07:540][914]LogTemp:Display: Added material ShaderMap 0x000002AF32E9F200 with Material 0x000002AF236F7380 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.07:565][914]LogTemp:Display: Kicking off shader compilation for M_Tech_Panel, GameThreadShaderMap 0x000002AF32E9F200
+[2017.07.17-13.01.07:565][914]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.07.17-13.01.07:591][914]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.07.17-13.01.07:591][914]LogTemp:Display: Added material ShaderMap 0x000002AF32F0C480 with Material 0x000002AE9687D600 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.07:595][914]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x000002AF32F0C480
+[2017.07.17-13.01.09:564][ 31]LogMaterial: Missing cached shader map for material M_Tech_Panel, compiling. 
+[2017.07.17-13.01.09:565][ 31]LogTemp:Display: Added material ShaderMap 0x000002AF27889D00 with Material 0x000002AF236F7380 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.09:604][ 31]LogTemp:Display: Kicking off shader compilation for M_Tech_Panel, GameThreadShaderMap 0x000002AF27889D00
+[2017.07.17-13.01.09:604][ 31]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.07.17-13.01.09:607][ 31]LogTemp:Display: Removed shader map 0x000002AF32F0C480 from material 0x000002AE9687D600
+[2017.07.17-13.01.09:632][ 31]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.07.17-13.01.09:633][ 31]LogTemp:Display: Added material ShaderMap 0x000002AF4408E400 with Material 0x000002AF440ABA00 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.09:635][ 31]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x000002AF4408E400
+[2017.07.17-13.01.09:640][ 31]LogMaterial: Missing cached shader map for material M_Tech_Panel, compiling. 
+[2017.07.17-13.01.09:641][ 31]LogTemp:Display: Added material ShaderMap 0x000002AF4408CB80 with Material 0x000002AF236F7380 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.09:683][ 31]LogTemp:Display: Kicking off shader compilation for M_Tech_Panel, GameThreadShaderMap 0x000002AF4408CB80
+[2017.07.17-13.01.09:683][ 31]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.07.17-13.01.09:687][ 31]LogTemp:Display: Removed shader map 0x000002AF4408E400 from material 0x000002AF440ABA00
+[2017.07.17-13.01.09:711][ 31]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.07.17-13.01.09:713][ 31]LogTemp:Display: Added material ShaderMap 0x000002AF43C1C800 with Material 0x000002AF43C3BA00 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.09:716][ 31]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x000002AF43C1C800
+[2017.07.17-13.01.09:846][ 39]LogTemp:Display: Finished compile of shader map 0x000002AF32E9F200
+[2017.07.17-13.01.09:846][ 39]LogTemp:Display: Shader map M_Tech_Panel complete, GameThreadShaderMap 0x000002AF32E9F200, marking material M_Tech_Panel as finished
+[2017.07.17-13.01.09:846][ 39]LogTemp:Display: Marking material as finished 0x000002AF236F7380
+[2017.07.17-13.01.09:895][ 42]LogTemp:Display: Finished compile of shader map 0x000002AF27889D00
+[2017.07.17-13.01.09:895][ 42]LogTemp:Display: Shader map M_Tech_Panel complete, GameThreadShaderMap 0x000002AF27889D00, marking material M_Tech_Panel as finished
+[2017.07.17-13.01.09:895][ 42]LogTemp:Display: Marking material as finished 0x000002AF236F7380
+[2017.07.17-13.01.09:911][ 43]LogTemp:Display: Finished compile of shader map 0x000002AF4408E400
+[2017.07.17-13.01.12:836][218]LogTemp:Display: Finished compile of shader map 0x000002AF4408CB80
+[2017.07.17-13.01.12:836][218]LogTemp:Display: Shader map M_Tech_Panel complete, GameThreadShaderMap 0x000002AF4408CB80, marking material M_Tech_Panel as finished
+[2017.07.17-13.01.12:836][218]LogTemp:Display: Marking material as finished 0x000002AF236F7380
+[2017.07.17-13.01.12:849][219]MaterialEditorStats: Info Base pass shader with static lighting: 139 instructions
+[2017.07.17-13.01.12:849][219]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 111 instructions
+[2017.07.17-13.01.12:849][219]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.17-13.01.12:849][219]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.07.17-13.01.12:916][223]LogTemp:Display: Finished compile of shader map 0x000002AF43C1C800
+[2017.07.17-13.01.12:916][223]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x000002AF43C1C800, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.07.17-13.01.12:916][223]LogTemp:Display: Marking material as finished 0x000002AF43C3BA00
+[2017.07.17-13.01.42:185][954]LogMaterial: Missing cached shader map for material M_Tech_Panel, compiling. 
+[2017.07.17-13.01.42:186][954]LogTemp:Display: Added material ShaderMap 0x000002AF3FAA0B80 with Material 0x000002AF236F7380 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.42:211][954]LogTemp:Display: Kicking off shader compilation for M_Tech_Panel, GameThreadShaderMap 0x000002AF3FAA0B80
+[2017.07.17-13.01.42:211][954]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.07.17-13.01.42:241][954]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.07.17-13.01.42:241][954]LogTemp:Display: Added material ShaderMap 0x000002AF43C3E400 with Material 0x000002AF43C3BA00 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.42:243][954]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x000002AF43C3E400
+[2017.07.17-13.01.45:655][154]LogTemp:Display: Finished compile of shader map 0x000002AF43C3E400
+[2017.07.17-13.01.45:655][154]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x000002AF43C3E400, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.07.17-13.01.45:655][154]LogTemp:Display: Marking material as finished 0x000002AF43C3BA00
+[2017.07.17-13.01.45:657][154]LogTemp:Display: Finished compile of shader map 0x000002AF3FAA0B80
+[2017.07.17-13.01.45:657][154]LogTemp:Display: Shader map M_Tech_Panel complete, GameThreadShaderMap 0x000002AF3FAA0B80, marking material M_Tech_Panel as finished
+[2017.07.17-13.01.45:657][154]LogTemp:Display: Marking material as finished 0x000002AF236F7380
+[2017.07.17-13.01.45:671][155]MaterialEditorStats: Info Base pass shader with static lighting: 139 instructions
+[2017.07.17-13.01.45:671][155]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 111 instructions
+[2017.07.17-13.01.45:671][155]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.17-13.01.45:671][155]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.07.17-13.01.52:658][562]LogMaterialEditor: Applying material M_Tech_Panel
+[2017.07.17-13.01.53:294][562]LogMaterial: Missing cached shader map for material M_Tech_Panel, compiling. 
+[2017.07.17-13.01.53:295][562]LogTemp:Display: Added material ShaderMap 0x000002AF2359B580 with Material 0x000002AF236F7380 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.53:331][562]LogTemp:Display: Kicking off shader compilation for M_Tech_Panel, GameThreadShaderMap 0x000002AF2359B580
+[2017.07.17-13.01.53:332][562]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.07.17-13.01.53:354][562]LogMaterial: Missing cached shader map for material M_Tech_Panel, compiling. 
+[2017.07.17-13.01.53:356][562]LogTemp:Display: Added material ShaderMap 0x000002AEA9BC0100 with Material 0x000002AEE8366E00 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.53:467][562]LogTemp:Display: Kicking off shader compilation for M_Tech_Panel, GameThreadShaderMap 0x000002AEA9BC0100
+[2017.07.17-13.01.53:475][562]LogMaterial: Missing cached shader map for material M_Tech_Panel, compiling. 
+[2017.07.17-13.01.53:476][562]LogTemp:Display: Added material ShaderMap 0x000002AF4484B580 with Material 0x000002AEE8366E00 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.53:525][562]LogTemp:Display: Kicking off shader compilation for M_Tech_Panel, GameThreadShaderMap 0x000002AF4484B580
+[2017.07.17-13.01.53:527][562]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.07.17-13.01.53:608][562]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_Tech_Panel, compiling. 
+[2017.07.17-13.01.53:610][562]LogTemp:Display: Added material ShaderMap 0x000002AF4506CF00 with Material 0x000002AF450C4A00 to ShaderMapsBeingCompiled
+[2017.07.17-13.01.56:073][562]LogTemp:Display: Finished compile of shader map 0x000002AF4506CF00
+[2017.07.17-13.01.56:073][562]LogTemp:Display: Shader map FDebugViewModeMaterialProxy M_Tech_Panel complete, GameThreadShaderMap 0x000002AF4506CF00, marking material FDebugViewModeMaterialProxy M_Tech_Panel as finished
+[2017.07.17-13.01.56:073][562]LogTemp:Display: Marking material as finished 0x000002AF450C4A00
+[2017.07.17-13.01.56:078][562]TextureStreamingBuild:Display: Compiling optional shaders took 2.493 seconds.
+[2017.07.17-13.01.56:123][562]LogTemp:Display: Finished compile of shader map 0x000002AF2359B580
+[2017.07.17-13.01.56:123][562]LogTemp:Display: Shader map M_Tech_Panel complete, GameThreadShaderMap 0x000002AF2359B580, marking material M_Tech_Panel as finished
+[2017.07.17-13.01.56:123][562]LogTemp:Display: Marking material as finished 0x000002AF236F7380
+[2017.07.17-13.02.00:404][712]LogTemp: Repeting last play command: Selected Viewport
+[2017.07.17-13.02.00:423][712]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.07.17-13.02.00:423][712]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.07.17-13.02.00:425][712]PIE: New page: PIE session: ThirdPersonExampleMap (Jul 17, 2017, 5:02:00 AM)
+[2017.07.17-13.02.00:425][712]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap
+[2017.07.17-13.02.00:443][712]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017437s)
+[2017.07.17-13.02.00:444][712]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.07.17-13.02.00:444][712]LogPlayLevel: PIE: World Init took: (0.001043s)
+[2017.07.17-13.02.00:444][712]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap.ThirdPersonExampleMap (0.018775s)
+[2017.07.17-13.02.00:520][712]LogInit: XAudio2 using 'Speaker/HP (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.17-13.02.00:533][712]LogInit: FAudioDevice initialized.
+[2017.07.17-13.02.00:570][712]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.07.17-13.02.00:574][712]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.07.17-09.02.00
+[2017.07.17-13.02.00:575][712]LogWorld: Bringing up level for play took: 0.003492
+[2017.07.17-13.02.00:576][712]LogInit: WinSock: Socket queue 131072 / 131072
+[2017.07.17-13.02.00:576][712]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.17-13.02.00:576][712]LogNet: GameNetDriver IpNetDriver_2 IpNetDriver listening on port 7777
+[2017.07.17-13.02.00:577][712]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap -0.525
+[2017.07.17-13.02.00:578][712]PIE: New page: PIE session: ThirdPersonExampleMap (Jul 17, 2017, 5:02:00 AM)
+[2017.07.17-13.02.00:621][712]LogNet: Browse: 127.0.0.1//Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2017.07.17-13.02.00:621][712]LogInit: WinSock: Socket queue 32768 / 32768
+[2017.07.17-13.02.00:621][712]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.17-13.02.00:621][712]LogNet: Game client on port 7777, rate 10000
+[2017.07.17-13.02.00:622][712]LogNet: UPendingNetGame::InitNetDriver: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_2, Driver: PendingNetDriver IpNetDriver_3, IsServer: NO, PC: NULL, Owner: NULL
+[2017.07.17-13.02.00:628][712]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap -0.474
+[2017.07.17-13.02.00:635][712]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.07.17-13.02.00:635][712]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54833
+[2017.07.17-13.02.00:635][712]LogHandshake: SendConnectChallenge. Timestamp: 0.031742, Cookie: 133183119108008030198248235163019182022108006193035092154075
+[2017.07.17-13.02.00:636][712]LogHandshake: SendChallengeResponse. Timestamp: 0.031742, Cookie: 133183119108008030198248235163019182022108006193035092154075
+[2017.07.17-13.02.00:679][713]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54833
+[2017.07.17-13.02.00:679][713]LogNet: Server accepting post-challenge connection from: 127.0.0.1:54833
+[2017.07.17-13.02.00:679][713]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.07.17-13.02.00:679][713]LogNet: NotifyAcceptedConnection: Name: ThirdPersonExampleMap, TimeStamp: 07/17/17 09:02:00, [UNetConnection] RemoteAddr: 127.0.0.1:54833, Name: IpConnection_3, Driver: GameNetDriver IpNetDriver_2, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.17-13.02.00:679][713]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:54833, Name: IpConnection_3, Driver: GameNetDriver IpNetDriver_2, IsServer: YES, PC: NULL, Owner: NULL
+[2017.07.17-13.02.00:679][713]LogNet: NotifyAcceptingChannel Control 0 server World /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap.ThirdPersonExampleMap: Accepted
+[2017.07.17-13.02.00:679][713]LogNet: Remote platform little endian=1
+[2017.07.17-13.02.00:679][713]LogNet: This platform little endian=1
+[2017.07.17-13.02.00:694][714]LogNet: Login request: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap userId: Invalid
+[2017.07.17-13.02.00:696][714]LogNet: Welcomed by server (Level: /Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap, Game: /Game/ThirdPersonBP/Blueprints/ThirdPersonGameMode.ThirdPersonGameMode_C)
+[2017.07.17-13.02.00:696][714]LogLoad: LoadMap: 127.0.0.1//Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap?game=/Game/ThirdPersonBP/Blueprints/ThirdPersonGameMode.ThirdPersonGameMode_C
+[2017.07.17-13.02.00:720][714]Cmd: MEM
+[2017.07.17-13.02.00:742][714]LogMemory: Platform Memory Stats for Windows
+[2017.07.17-13.02.00:742][714]LogMemory: Process Physical Memory: 1720.40 MB used, 1731.16 MB peak
+[2017.07.17-13.02.00:742][714]LogMemory: Process Virtual Memory: 2721.32 MB used, 2722.32 MB peak
+[2017.07.17-13.02.00:743][714]LogMemory: Physical Memory: 7040.36 MB used,  8968.87 MB free, 16009.22 MB total
+[2017.07.17-13.02.00:743][714]LogMemory: Virtual Memory: 4011.79 MB used,  8968.87 MB free, 134217728.00 MB total
+[2017.07.17-13.02.00:743][714]LogMemory: 
+[2017.07.17-13.02.00:743][714]Allocator Stats for TBB: (not implemented)
+[2017.07.17-13.02.00:763][714]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.07.17-13.02.00:772][714]LogTemp:Display: Finished compile of shader map 0x000002AF4484B580
+[2017.07.17-13.02.00:772][714]LogTemp:Display: Shader map M_Tech_Panel complete, GameThreadShaderMap 0x000002AF4484B580, marking material M_Tech_Panel as finished
+[2017.07.17-13.02.00:772][714]LogTemp:Display: Marking material as finished 0x000002AEE8366E00
+[2017.07.17-13.02.00:780][714]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_2_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2017.07.17-09.02.00
+[2017.07.17-13.02.00:780][714]LogWorld: Bringing up level for play took: 0.002413
+[2017.07.17-13.02.00:780][714]LogLoad: Took 0.084488 seconds to LoadMap(/Game/ThirdPersonBP/Maps/UEDPIE_1_ThirdPersonExampleMap)
+[2017.07.17-13.02.01:067][714]MaterialEditorStats: Info Base pass shader with static lighting: 139 instructions
+[2017.07.17-13.02.01:067][714]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 111 instructions
+[2017.07.17-13.02.01:067][714]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.17-13.02.01:067][714]MaterialEditorStats: Info Texture samplers: 7/16
+[2017.07.17-13.02.01:384][715]LogNet: Client netspeed is 10000
+[2017.07.17-13.02.01:384][715]LogNet: Join request: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap?SplitscreenCount=1
+[2017.07.17-13.02.01:387][715]LogNet: Join succeeded: 259
+[2017.07.17-13.02.07:616][885]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.07.17-13.02.07:836][885]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2017.07.17-13.02.07:851][885]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_2, Driver: GameNetDriver IpNetDriver_3, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1
+[2017.07.17-13.02.07:851][885]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_2, Driver: GameNetDriver IpNetDriver_3, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1, Channels: 11, Time: 2017.07.17-13.02.07
+[2017.07.17-13.02.07:851][885]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:7777, Name: IpConnection_2, Driver: GameNetDriver IpNetDriver_3, IsServer: NO, PC: PlayerController_1, Owner: PlayerController_1
+[2017.07.17-13.02.07:854][885]LogNet: UChannel::CleanUp: ChIndex == 0. Closing connection. [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:54833, Name: IpConnection_3, Driver: GameNetDriver None, IsServer: YES, PC: None, Owner: None
+[2017.07.17-13.02.07:854][885]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:54833, Name: IpConnection_3, Driver: GameNetDriver None, IsServer: YES, PC: None, Owner: None, Channels: 2, Time: 2017.07.17-13.02.07
+[2017.07.17-13.02.07:854][885]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:54833, Name: IpConnection_3, Driver: GameNetDriver None, IsServer: YES, PC: None, Owner: None
+[2017.07.17-13.02.07:855][885]LogExit: GameNetDriver None shut down
+[2017.07.17-13.02.07:855][885]LogExit: GameNetDriver None shut down
+[2017.07.17-13.02.35:819][ 73]LogSavePackage: Save=191.01ms
+[2017.07.17-13.02.35:819][ 73]LogSavePackage: Moving '../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Saved/ThirdPersonExampleMap1DEEB08A4CEAE346ADD9D5958644E8AA.tmp' to '../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2017.07.17-13.02.35:823][ 73]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2017.07.17-13.02.36:297][ 73]LogSavePackage: Save=224.51ms
+[2017.07.17-13.02.36:297][ 73]LogSavePackage: Moving '../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Saved/ThirdPersonExampleMap_BuiltData3C4A891A43166256226C7CA53C1E5C37.tmp' to '../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2017.07.17-13.02.36:301][ 73]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset
+[2017.07.17-13.02.38:739][152]LogSavePackage: Save=19.06ms
+[2017.07.17-13.02.38:739][152]LogSavePackage: Moving '../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Saved/M_Tech_PanelBBB673AA4FE88B645E2CCFAD58FDC6B0.tmp' to '../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Content/StarterContent/Materials/M_Tech_Panel.uasset'
+[2017.07.17-13.02.38:743][152]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Content/StarterContent/Materials/M_Tech_Panel.uasset
+[2017.07.17-13.02.40:582][199]Cmd: QUIT_EDITOR
+[2017.07.17-13.02.41:545][199]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.07.17-13.02.41:609][199]LogExit: Preparing to exit.
+[2017.07.17-13.02.42:515][199]LogDirectoryWatcher: A directory notification for 'C:/Users/Camper/Documents/Unreal Projects/Programming/Content/' was aborted.
+[2017.07.17-13.02.42:573][199]LogExit: Editor shut down
+[2017.07.17-13.02.42:574][199]LogExit: Transaction tracking system shut down
+[2017.07.17-13.02.42:575][199]LogTemp:Display: Removed shader map 0x000002AEA9BC0100 from material 0x000002AEE8366E00
+[2017.07.17-13.02.42:683][199]LogObj: Freed 0b from 0 cluster array pools.
+[2017.07.17-13.02.42:683][199]LogExit: Object subsystem successfully closed.
+[2017.07.17-13.02.42:697][199]LogD3D11RHI: Shutdown
+[2017.07.17-13.02.42:697][199]LogD3D11RHI: CleanupD3DDevice
+[2017.07.17-13.02.42:847][199]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.07.17-13.02.42:878][199]LogModuleManager: Shutting down and abandoning module MaterialEditor (508)
+[2017.07.17-13.02.42:878][199]LogModuleManager: Shutting down and abandoning module BlueprintGraph (506)
+[2017.07.17-13.02.42:878][199]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (504)
+[2017.07.17-13.02.42:878][199]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (500)
+[2017.07.17-13.02.42:878][199]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.07.17-13.02.42:878][199]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.07.17-13.02.42:878][199]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.07.17-13.02.42:878][199]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.07.17-13.02.42:878][199]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.07.17-13.02.42:879][199]LogDirectoryWatcher: A directory notification for 'C:/Users/Camper/Documents/Unreal Projects/Programming/Content/Collections/' was aborted.
+[2017.07.17-13.02.42:879][199]LogDirectoryWatcher: A directory notification for 'C:/Users/Camper/Documents/Unreal Projects/Programming/Content/Developers/Camper/Collections/' was aborted.
+[2017.07.17-13.02.42:879][199]LogDirectoryWatcher: A directory notification for 'C:/Users/Camper/Documents/Unreal Projects/Programming/Saved/Collections/' was aborted.
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.07.17-13.02.42:879][199]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.07.17-13.02.42:880][199]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.07.17-13.02.43:471][199]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.07.17-13.02.43:513][199]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.07.17-13.02.43:513][199]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.07.17-13.02.43:513][199]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.07.17-13.02.43:513][199]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.07.17-13.02.43:513][199]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.07.17-13.02.43:513][199]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.07.17-13.02.43:513][199]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.07.17-13.02.43:513][199]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.07.17-13.02.43:513][199]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.07.17-13.02.43:520][199]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.07.17-13.02.43:557][199]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.07.17-13.02.43:558][199]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.07.17-13.02.43:558][199]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.07.17-13.02.43:558][199]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.07.17-13.02.43:558][199]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.07.17-13.02.43:558][199]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.07.17-13.02.43:558][199]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.07.17-13.02.43:558][199]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.07.17-13.02.43:558][199]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.07.17-13.02.43:558][199]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.07.17-13.02.43:558][199]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.07.17-13.02.43:559][199]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.07.17-13.02.43:560][199]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.07.17-13.02.43:560][199]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.07.17-13.02.43:560][199]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.07.17-13.02.43:560][199]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.07.17-13.02.43:662][199]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.07.17-13.02.43:762][199]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.07.17-13.02.43:766][199]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.07.17-13.02.43:766][199]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.07.17-13.02.43:766][199]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.07.17-13.02.43:766][199]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.07.17-13.02.43:766][199]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.07.17-13.02.43:766][199]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.07.17-13.02.43:928][199]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.07.17-13.02.43:928][199]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Camper/Documents/Unreal Projects/Programming/Content/' was aborted.
+[2017.07.17-13.02.43:928][199]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.07.17-13.02.43:928][199]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.07.17-13.02.43:929][199]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.07.17-13.02.43:929][199]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.07.17-13.02.43:929][199]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.07.17-13.02.43:929][199]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.07.17-13.02.43:929][199]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.07.17-13.02.43:929][199]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.07.17-13.02.43:929][199]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.07.17-13.02.43:929][199]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.07.17-13.02.43:996][199]LogDerivedDataCache: Shutdown
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.07.17-13.02.43:996][199]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.07.17-13.02.43:997][199]LogOnline:Display: Unloading online subsystem: NULL
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.07.17-13.02.43:997][199]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.07.17-13.02.43:997][199]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.07.17-13.02.43:997][199]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BF97440C3-4F17-F99A-96FE-63885BB1AD6A%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.3-3450819%2B%2B%2BUE4%2BRelease-4.15&UserID=cb03359b402e97089a818485821d9df5%7C30b3c2065f7746a783b87946580a22fe%7C1ff1b01f-1d35-47d8-b799-dbda82573b2d&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.07.17-13.02.44:022][199]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.07.17-13.02.44:024][199]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.07.17-13.02.44:024][199]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.07.17-13.02.44:024][199]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.07.17-13.02.44:024][199]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.07.17-13.02.44:024][199]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.07.17-13.02.44:025][199]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.07.17-13.02.44:025][199]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.07.17-13.02.44:025][199]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.07.17-13.02.44:025][199]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.07.17-13.02.44:025][199]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.07.17-13.02.44:025][199]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.07.17-13.02.44:025][199]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.07.17-13.02.44:025][199]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.07.17-13.02.44:025][199]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.07.17-13.02.44:025][199]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.07.17-13.02.44:027][199]LogExit: Exiting.
+[2017.07.17-13.02.44:029][199]Log file closed, 07/17/17 09:02:44
